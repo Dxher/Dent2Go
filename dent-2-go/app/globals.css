@@ -1,0 +1,83 @@
+:root {
+  /* Brand */
+  --color-bg: #0b0f14;
+  --color-surface: #111826;
+  --color-text: #eaf0ff;
+  --color-muted: rgba(234, 240, 255, 0.72);
+  --color-border: rgba(234, 240, 255, 0.12);
+
+  --color-accent: #3b82f6; /* blue */
+  --color-accent-2: #22c55e; /* green */
+
+  /* Layout */
+  --gutter: 20px;
+  --container: 1120px;
+
+  /* Radius + Shadow */
+  --radius-lg: 18px;
+  --radius-md: 14px;
+  --shadow-lg: 0 18px 55px rgba(0, 0, 0, 0.45);
+
+  /* Spacing (8px scale-ish) */
+  --space-1: 6px;
+  --space-2: 10px;
+  --space-3: 14px;
+  --space-4: 18px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 44px;
+  --space-8: 60px;
+
+  /* Navbar */
+  --nav-h: 74px;
+
+  /* Type */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.45;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(var(--container), calc(100% - 2 * var(--gutter)));
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.sectionTitle {
+  font-size: clamp(1.6rem, 1.2rem + 1vw, 2.2rem);
+  margin: 0 0 var(--space-4);
+  letter-spacing: 0.01em;
+}
+
+.muted {
+  color: var(--color-muted);
+}
