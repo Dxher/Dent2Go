@@ -2,6 +2,7 @@
   min-height: 100vh;
 }
 
+/* HERO */
 .hero {
   padding: calc(var(--nav-h) + var(--space-7)) 0 var(--space-8);
   position: relative;
@@ -11,16 +12,6 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-      900px 420px at 20% 20%,
-      rgba(59, 130, 246, 0.22),
-      transparent 60%
-    ),
-    radial-gradient(
-      800px 380px at 80% 10%,
-      rgba(34, 197, 94, 0.14),
-      transparent 60%
-    );
   pointer-events: none;
 }
 
@@ -59,35 +50,36 @@
   height: 46px;
   padding: 0 16px;
   border-radius: 14px;
-  font-weight: 700;
+  font-weight: 800;
   border: 1px solid transparent;
   transition: transform 160ms ease, background 160ms ease, border 160ms ease;
 }
 
 .primaryBtn {
-  background: rgba(59, 130, 246, 0.2);
-  border-color: rgba(59, 130, 246, 0.4);
+  background: rgba(228, 60, 47, 0.12);
+  border-color: rgba(228, 60, 47, 0.35);
 }
 
 .primaryBtn:hover {
   transform: translateY(-1px);
-  background: rgba(59, 130, 246, 0.28);
+  background: rgba(228, 60, 47, 0.18);
 }
 
 .secondaryBtn {
-  background: rgba(234, 240, 255, 0.06);
-  border-color: rgba(234, 240, 255, 0.12);
+  background: rgba(242, 180, 60, 0.12);
+  border-color: rgba(242, 180, 60, 0.35);
 }
 
 .secondaryBtn:hover {
   transform: translateY(-1px);
-  background: rgba(234, 240, 255, 0.09);
+  background: rgba(242, 180, 60, 0.18);
 }
 
+/* HERO CARD */
 .heroCard {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(17, 24, 38, 0.8);
+  background: var(--color-surface);
   box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
@@ -95,8 +87,8 @@
 .heroBadge {
   padding: 14px 16px;
   border-bottom: 1px solid var(--color-border);
-  font-weight: 700;
-  background: rgba(234, 240, 255, 0.04);
+  font-weight: 900;
+  background: rgba(255, 247, 240, 0.6);
 }
 
 .heroCardBody {
@@ -105,7 +97,7 @@
 
 .heroCardTitle {
   margin: 0 0 var(--space-2);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.05rem;
 }
 
@@ -120,7 +112,7 @@
   padding: 12px;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
-  background: rgba(234, 240, 255, 0.04);
+  background: rgba(255, 247, 240, 0.7);
 }
 
 .miniLabel {
@@ -132,9 +124,10 @@
 .miniValue {
   display: block;
   margin-top: 2px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
+/* ABOUT */
 .aboutGrid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -145,13 +138,14 @@
 .aboutCard {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(17, 24, 38, 0.7);
+  background: var(--color-surface);
   padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
 }
 
 .aboutLead {
   margin: 0 0 var(--space-3);
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.1rem;
 }
 
@@ -165,7 +159,7 @@
   font-weight: 950;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(234, 240, 255, 0.78);
+  color: var(--color-muted);
 }
 
 /* New About layout */
@@ -179,13 +173,14 @@
 .aboutCardNew {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(17, 24, 38, 0.7);
+  background: var(--color-surface);
   padding: var(--space-6);
+  box-shadow: var(--shadow-lg);
 }
 
 .aboutP {
   margin: 0 0 var(--space-4);
-  color: rgba(234, 240, 255, 0.78);
+  color: var(--color-muted);
   line-height: 1.75;
 }
 
@@ -201,46 +196,40 @@
 .infoItem {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(234, 240, 255, 0.04);
+  background: rgba(255, 247, 240, 0.7);
   padding: var(--space-5);
 }
 
 .infoLabel {
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 0.85rem;
-  color: rgba(234, 240, 255, 0.72);
+  color: var(--color-muted);
   margin-bottom: 6px;
 }
 
 .infoValue {
   font-weight: 950;
-  color: rgba(234, 240, 255, 0.92);
+  color: var(--color-text);
 }
 
-/* Mobile */
-@media (max-width: 900px) {
-  .aboutGridNew {
-    grid-template-columns: 1fr;
-  }
-}
-
-
+/* Stats */
 .stat {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(234, 240, 255, 0.04);
+  background: rgba(255, 247, 240, 0.7);
   padding: var(--space-5);
 }
 
 .statNum {
-  font-weight: 900;
+  font-weight: 950;
   font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 6px;
 }
 
+/* CTA */
 .ctaCard,
 .ctaCardAlt {
   display: flex;
@@ -253,27 +242,31 @@
 }
 
 .ctaCard {
-  background: rgba(234, 240, 255, 0.04);
+  background: rgba(255, 247, 240, 0.65);
 }
 
 .ctaCardAlt {
-  background: rgba(59, 130, 246, 0.12);
-  border-color: rgba(59, 130, 246, 0.28);
+  background: rgba(228, 60, 47, 0.12);
+  border-color: rgba(228, 60, 47, 0.28);
 }
 
 .ctaTitle {
   margin: 0 0 var(--space-2);
-  font-weight: 900;
+  font-weight: 950;
   font-size: 1.4rem;
 }
 
-
+/* Mobile */
 @media (max-width: 900px) {
   .heroInner {
     grid-template-columns: 1fr;
   }
 
   .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutGridNew {
     grid-template-columns: 1fr;
   }
 

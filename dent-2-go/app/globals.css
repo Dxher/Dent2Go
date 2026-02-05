@@ -1,13 +1,13 @@
 :root {
   /* Brand */
-  --color-bg: #0b0f14;
-  --color-surface: #111826;
-  --color-text: #eaf0ff;
-  --color-muted: rgba(234, 240, 255, 0.72);
-  --color-border: rgba(234, 240, 255, 0.12);
+  --color-bg: #fff7f0;
+  --color-surface: #ffe8d6;
+  --color-text: #4b1f10;
+  --color-muted: rgba(75, 31, 16, 0.72);
+  --color-border: rgba(226, 139, 90, 0.35);
 
-  --color-accent: #3b82f6; /* blue */
-  --color-accent-2: #22c55e; /* green */
+  --color-accent: #e43c2f; /* red */
+  --color-accent-2: #f2b43c; /* gold */
 
   /* Layout */
   --gutter: 20px;
@@ -16,7 +16,7 @@
   /* Radius + Shadow */
   --radius-lg: 18px;
   --radius-md: 14px;
-  --shadow-lg: 0 18px 55px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 18px 55px rgba(145, 70, 44, 0.22);
 
   /* Spacing (8px scale-ish) */
   --space-1: 6px;

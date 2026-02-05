@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--color-border);
-  background: rgba(234, 240, 255, 0.06);
+  background: var(--color-surface);
   padding: var(--space-7) 0;
 }
 
@@ -25,20 +25,20 @@
 
 .copy {
   font-size: 0.9rem;
-  color: rgba(234, 240, 255, 0.75);
+  color: var(--color-muted);
 }
 
 .colTitle {
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.06em;
   font-size: 0.95rem;
-  color: rgba(234, 240, 255, 0.92);
+  color: var(--color-text);
 }
 
 .rule {
   height: 1px;
   width: 100%;
-  background: rgba(234, 240, 255, 0.18);
+  background: var(--color-border);
   margin: 10px 0 14px;
 }
 
@@ -49,12 +49,15 @@
 
 .link {
   font-size: 0.95rem;
-  color: rgba(234, 240, 255, 0.78);
+  color: var(--color-text);
   transition: color 160ms ease;
+  text-decoration: underline;
+  text-decoration-color: rgba(242, 180, 60, 0.35);
+  text-underline-offset: 3px;
 }
 
 .link:hover {
-  color: var(--color-text);
+  color: rgba(228, 60, 47, 1);
 }
 
 .contactGrid {
@@ -65,15 +68,15 @@
 }
 
 .label {
-  font-weight: 900;
+  font-weight: 950;
   letter-spacing: 0.04em;
   font-size: 0.85rem;
-  color: rgba(234, 240, 255, 0.85);
+  color: var(--color-muted);
 }
 
 .value {
   font-size: 0.95rem;
-  color: rgba(234, 240, 255, 0.78);
+  color: var(--color-text);
   line-height: 1.55;
 }
 

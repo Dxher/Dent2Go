@@ -26,7 +26,7 @@
 .h2 {
   margin: 0 0 var(--space-4);
   font-size: 1.6rem;
-  font-weight: 900;
+  font-weight: 950;
 }
 
 .servicesGrid {
@@ -38,7 +38,7 @@
 .card {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(17, 24, 38, 0.7);
+  background: var(--color-surface);
   padding: var(--space-6);
   box-shadow: var(--shadow-lg);
 }
@@ -46,12 +46,12 @@
 .cardTitle {
   margin: 0 0 var(--space-2);
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: 950;
 }
 
 .cardText {
   margin: 0 0 var(--space-5);
-  color: rgba(234, 240, 255, 0.75);
+  color: var(--color-muted);
   line-height: 1.6;
 }
 
@@ -59,18 +59,18 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-weight: 900;
+  font-weight: 950;
   padding: 10px 14px;
   border-radius: 14px;
-  border: 1px solid rgba(234, 240, 255, 0.14);
-  background: rgba(234, 240, 255, 0.06);
+  border: 1px solid rgba(228, 60, 47, 0.32);
+  background: rgba(228, 60, 47, 0.12);
   transition: transform 160ms ease, background 160ms ease, border 160ms ease;
 }
 
 .cta:hover {
   transform: translateY(-1px);
-  background: rgba(234, 240, 255, 0.09);
-  border-color: rgba(234, 240, 255, 0.2);
+  background: rgba(228, 60, 47, 0.18);
+  border-color: rgba(228, 60, 47, 0.42);
 }
 
 /* Pricing */
@@ -83,8 +83,8 @@
 
 .priceCard {
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(59, 130, 246, 0.22);
-  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(242, 180, 60, 0.38);
+  background: rgba(242, 180, 60, 0.12);
   padding: var(--space-6);
 }
 
@@ -97,7 +97,7 @@
 .priceTitle {
   margin: 0;
   font-size: 1.1rem;
-  font-weight: 900;
+  font-weight: 950;
 }
 
 .priceValue {
@@ -108,7 +108,7 @@
 
 .priceNote {
   margin: 0 0 var(--space-5);
-  color: rgba(234, 240, 255, 0.72);
+  color: var(--color-muted);
 }
 
 .priceBtn {
@@ -118,15 +118,15 @@
   height: 46px;
   padding: 0 14px;
   border-radius: 14px;
-  font-weight: 900;
-  border: 1px solid rgba(59, 130, 246, 0.45);
-  background: rgba(59, 130, 246, 0.2);
+  font-weight: 950;
+  border: 1px solid rgba(228, 60, 47, 0.38);
+  background: rgba(228, 60, 47, 0.12);
   transition: transform 160ms ease, background 160ms ease;
 }
 
 .priceBtn:hover {
   transform: translateY(-1px);
-  background: rgba(59, 130, 246, 0.28);
+  background: rgba(228, 60, 47, 0.18);
 }
 
 /* Additional charges */
@@ -135,12 +135,12 @@
   padding: var(--space-6);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  background: rgba(234, 240, 255, 0.04);
+  background: rgba(255, 247, 240, 0.65);
 }
 
 .addOnText {
   margin: 0 0 var(--space-4);
-  color: rgba(234, 240, 255, 0.8);
+  color: var(--color-muted);
   line-height: 1.6;
 }
 
@@ -161,18 +161,18 @@
   justify-content: space-between;
   padding: 12px 14px;
   border-radius: 14px;
-  border: 1px solid rgba(234, 240, 255, 0.12);
-  background: rgba(11, 15, 20, 0.5);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
 }
 
 .chargePlace {
-  font-weight: 800;
-  color: rgba(234, 240, 255, 0.86);
+  font-weight: 900;
+  color: var(--color-text);
 }
 
 .chargePrice {
   font-weight: 950;
-  color: rgba(234, 240, 255, 0.9);
+  color: var(--color-text);
 }
 
 @media (max-width: 980px) {

@@ -4,7 +4,7 @@
   z-index: 50;
   height: var(--nav-h);
   border-bottom: 1px solid var(--color-border);
-  background: rgba(11, 15, 20, 0.8);
+  background: rgba(255, 247, 240, 0.72);
   backdrop-filter: blur(10px);
 }
 
@@ -35,27 +35,30 @@
 }
 
 .link {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
-  color: rgba(234, 240, 255, 0.9);
+  color: var(--color-text);
   padding: 10px 10px;
   border-radius: 12px;
-  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease,
+    border 160ms ease;
+  border: 1px solid transparent;
 }
 
 .link:hover {
-  background: rgba(234, 240, 255, 0.08);
-  color: var(--color-text);
+  background: rgba(242, 180, 60, 0.14);
+  border-color: rgba(242, 180, 60, 0.35);
+  transform: translateY(-1px);
 }
 
 .cta {
   padding: 10px 14px;
-  background: rgba(59, 130, 246, 0.16);
-  border: 1px solid rgba(59, 130, 246, 0.35);
+  background: rgba(228, 60, 47, 0.12);
+  border: 1px solid rgba(228, 60, 47, 0.35);
 }
 
 .cta:hover {
-  background: rgba(59, 130, 246, 0.24);
+  background: rgba(228, 60, 47, 0.18);
 }
 
 @media (max-width: 720px) {
